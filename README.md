@@ -2,8 +2,6 @@
 
 Welcome to the ArtifactBin template project! This repository serves as a starting point for deploying React components created on [ArtifactBin.com](https://artifactbin.com) to Vercel.
 
-<!-- VERCEL_DEPLOY_BUTTON -->
-
 ## Overview
 
 This template project is designed to work seamlessly with ArtifactBin.com, allowing you to quickly deploy your React components to Vercel with just a few clicks. The project structure is set up to accommodate the React component you create on ArtifactBin.com.
@@ -30,6 +28,8 @@ This template project is designed to work seamlessly with ArtifactBin.com, allow
 3. Deploy to Vercel using the button above.
 
 For more detailed instructions, visit [ArtifactBin.com](https://artifactbin.com).
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/)
 
 ## Customization
 
