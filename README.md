@@ -2,7 +2,26 @@
 
 Welcome to the ArtifactBin template project! This repository serves as a starting point for deploying React components created on [ArtifactBin.com](https://artifactbin.com) to Vercel.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://artifactbin.com/deploy)
+<div id="vercel-deploy-button"></div>
+<script>
+  function updateDeployButton() {
+    var repoUrl = window.location.href.split('#')[0];
+    var encodedRepoUrl = encodeURIComponent(repoUrl);
+    var deployUrl = "https://vercel.com/new/clone?repository-url=" + encodedRepoUrl;
+    
+    var buttonHtml = '<a href="' + deployUrl + '" target="_blank">' +
+      '<img src="https://vercel.com/button" alt="Deploy with Vercel" />' +
+    '</a>';
+    
+    document.getElementById('vercel-deploy-button').innerHTML = buttonHtml;
+  }
+
+// Run on page load
+updateDeployButton();
+
+// Update if the URL changes (e.g., if viewing on GitHub or locally)
+window.addEventListener('hashchange', updateDeployButton);
+</script>
 
 ## Overview
 
@@ -23,14 +42,13 @@ This template project is designed to work seamlessly with ArtifactBin.com, allow
 └── tsconfig.json
 ```
 
-## How It Works
+# Usage
 
-1. Create or edit your React component on [ArtifactBin.com](https://artifactbin.com).
-2. Click the "Deploy to Vercel" button on ArtifactBin.com.
-3. ArtifactBin will automatically:
-   - Clone this template repository
-   - Add your React component code to `app/page.tsx`
-   - Deploy the project to Vercel
+1. Clone this repository or use it as a template.
+2. Replace the content in src/app/page.tsx with your React component from ArtifactBin.
+3. Deploy to Vercel using the button above.
+
+For more detailed instructions, visit [ArtifactBin.com](https://artifactbin.com).
 
 ## Customization
 
