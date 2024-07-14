@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ArtifactBin Template Project
 
-## Getting Started
+Welcome to the ArtifactBin template project! This repository serves as a starting point for deploying React components created on [ArtifactBin.com](https://artifactbin.com) to Vercel.
 
-First, run the development server:
+[![Deploy with Vercel](https://vercel.com/button)](https://artifactbin.com/deploy)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Overview
+
+This template project is designed to work seamlessly with ArtifactBin.com, allowing you to quickly deploy your React components to Vercel with just a few clicks. The project structure is set up to accommodate the React component you create on ArtifactBin.com.
+
+## Project Structure
+
+```
+/
+├── app/
+│   └── page.tsx    # Your React component will be placed here
+├── public/
+│   └── ...         # Static assets
+├── .gitignore
+├── next.config.js
+├── package.json
+├── README.md
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How It Works
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Create or edit your React component on [ArtifactBin.com](https://artifactbin.com).
+2. Click the "Deploy to Vercel" button on ArtifactBin.com.
+3. ArtifactBin will automatically:
+   - Clone this template repository
+   - Add your React component code to `app/page.tsx`
+   - Deploy the project to Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Customization
 
-## Learn More
+After deployment, you can further customize your project by cloning it from Vercel and making additional changes. Some ideas for customization:
 
-To learn more about Next.js, take a look at the following resources:
+- Add more pages or components
+- Customize the layout in `app/layout.tsx`
+- Add global styles in `app/globals.css`
+- Configure Next.js options in `next.config.js`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Requirements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This template project uses:
 
-## Deploy on Vercel
+- [Next.js 14](https://nextjs.org/)
+- [React 18](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Local Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you want to run this project locally:
+
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Run the development server:
+   ```
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Contributing
+
+We welcome contributions to improve this template project! Please feel free to submit issues or pull requests.
+
+## Support
+
+If you encounter any problems or have questions, please file an issue on the [ArtifactBin GitHub repository](https://github.com/artifactbin/template-project/issues) or contact support@artifactbin.com.
+
+## License
+
+This template project is released under the MIT License. See the [LICENSE](LICENSE) file for details.
