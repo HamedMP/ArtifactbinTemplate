@@ -2,26 +2,7 @@
 
 Welcome to the ArtifactBin template project! This repository serves as a starting point for deploying React components created on [ArtifactBin.com](https://artifactbin.com) to Vercel.
 
-<div id="vercel-deploy-button"></div>
-<script>
-  function updateDeployButton() {
-    var repoUrl = window.location.href.split('#')[0];
-    var encodedRepoUrl = encodeURIComponent(repoUrl);
-    var deployUrl = "https://vercel.com/new/clone?repository-url=" + encodedRepoUrl;
-    
-    var buttonHtml = '<a href="' + deployUrl + '" target="_blank">' +
-      '<img src="https://vercel.com/button" alt="Deploy with Vercel" />' +
-    '</a>';
-    
-    document.getElementById('vercel-deploy-button').innerHTML = buttonHtml;
-  }
-
-// Run on page load
-updateDeployButton();
-
-// Update if the URL changes (e.g., if viewing on GitHub or locally)
-window.addEventListener('hashchange', updateDeployButton);
-</script>
+<!-- VERCEL_DEPLOY_BUTTON -->
 
 ## Overview
 
